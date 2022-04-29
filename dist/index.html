@@ -1,41 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TrelloApp</title>
-  <link rel="stylesheet" href="/style.493e6e98.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.493e6e98.css">
+    <title>Trello</title>
 <script src="/style.493e6e98.js"></script></head>
 <body>
-  <div class="wrapper">
-    <header class="header">
-      <div class="header__logo">TrelloApp</div>
-      <div class="header__clock"><span></span></div>
-    </header>
+    <div class="wrapper">
+        <div class="wrapper__header">
+            <div class="header__logo">Trello</div>
+            <div class="header__clock">10:54:55</div>
+        </div>
+        <div class="wrapper-container">
+            <div class="wrapper-container__block todoBlock">
+                <div class="todoBlock__header header">
+                    <div class="todoBlock__header-name name">TODO:</div>
+                    <div class="todoBlock__header-counter counter">0</div>
+                </div>
+                <div class="todoBlock__container container">
+                    <!-- <div class="card">
+                        <div class="card__container">
+                            <div class="card__container__title left">Title</div>
+                            <div class="card__container__description left">Description</div>
+                            <div class="card__container__user left">Катя</div>
+                        </div>
+                        <div class="card__container">
+                            <div class="card__container-buttons right">
+                                <button class="functionButton" id="todo">Edit</button>
+                                <button class="functionButton" id="inprogress">Delete</button>
+                            </div>
+                            <div class="card__container-transitionButton right">
+                                <button class="functionButton" id="hiddenBtn"> > </button>
+                            </div>
+                            <div class="card__container-time right">
+                                <span id="newDate">10:54:55</span>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <button class="todoBlock__button">Add todo</button>
+            </div>
+            <div class="wrapper-container__block inprogressBlock">
+                <div class="inprogressBlock__header header">
+                    <div class="inprogressBlock__header-name name">IN PROGRESS:</div>
+                    <div class="inprogressBlock__header-counter counter">0</div>
+                </div>
+                <div class="inprogressBlock__container container"> 
+                    
+                </div>
+            </div>
+            <div class="wrapper-container__block doneBlock">
+                <div class="doneBlock__header header">
+                    <div class="doneBlock__header-name name">DONE:</div>
+                    <div class="doneBlock__header-counter counter">5</div>
+                </div>
+                <div class="doneBlock__container container">
 
-    <div class="container">
-      <div class="addBlock block">
-        <div class="block__head">
-          <h2 class="block__head__title">TODO:</h2>
-          <span class="block__head__counter">0</span>
+                </div>
+                <button class="doneBlock__button">Delete All</button>
+            </div>
         </div>
-      </div>
-      <div class="workBlock block">
-        <div class="block__head">
-          <h2 class="block__head__title">IN PROGRESS:</h2>
-          <span class="block__head__counter">0</span>
+
+        <div class="addTodoCard" id="add1">
+            <form class="addTodoCard-form" action="#">
+                <div class="addTodoCard-form__title">
+                    <input type="text" class="addTodoCard__input-title" name="" id="" placeholder="Title">
+                </div>
+                <input type="text" class="addTodoCard-form__description" id="" placeholder="Description">
+                <div class="addTodoCard-form__container">
+                    <select class="addTodoCard-form__container-person" name="value" id="one">
+                        <option class="opt" selected="">Select user</option>
+                    </select>
+                    <div class="addTodoCard-form__container-buttons">
+                        <button class="cardButton" id="cancel">Cancel</button>
+                        <button class="cardButton" id="confirm">Confirm</button>
+                    </div>
+                </div>
+            </form>
         </div>
-      </div>
-      <div class="doneBlock block">
-        <div class="block__head">
-          <h2 class="block__head__title">DONE:</h2>
-          <span class="block__head__counter">0</span>
+        <div class="addTodoCard" id="add2">
+            <form class="addTodoCard-form" action="#">
+                <div class="addTodoCard-form__title">
+                    <input type="text" class="addTodoCard__input-title" name="" id="" placeholder="Title">
+                </div>
+                <input type="text" class="addTodoCard-form__description" id="" placeholder="Description">
+                <div class="addTodoCard-form__container">
+                    <select class="addTodoCard-form__container-person" name="value" id="two">
+                        <option class="opt" selected="">Select user</option>
+                    </select>
+                    <div class="addTodoCard-form__container-buttons">
+                        <button class="cardButton" id="cancel">Cancel</button>
+                        <button class="cardButton" id="confirm2">Confirm</button>
+                    </div>
+                </div>
+            </form>
         </div>
-      </div>
+
+        <!-- <div class="modalCard">
+            <div class="modalCard__text">Warning!</div>
+            <div class="modalCard__buttons">
+                <button сlass="cardButton">Cancel</button>
+                <button сlass="cardButton">Confirm</button>
+            </div>
+        </div> -->
     </div>
-
-  </div>
-  <script src="/js.00a46daa.js" type="module"></script>
+    <script src="/js.00a46daa.js" type="module"></script>
 </body>
 </html>

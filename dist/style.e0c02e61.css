@@ -2,9 +2,8 @@
 * {
   margin: 0px;
   padding: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Quicksand', sans-serif;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
 }
 
 select {
@@ -22,12 +21,8 @@ input {
 .header {
   border-radius: 10px;
   padding: 10px 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .name {
@@ -46,7 +41,6 @@ input {
   border-bottom: 2px solid black;
   border-radius: 5px;
   padding-top: 20px;
-  min-height: 350px;
 }
 
 .cardButton {
@@ -62,42 +56,27 @@ input {
   cursor: pointer;
 }
 
-body {
-  position: relative;
-}
-
 .addTodoCard {
   width: 400px;
-  background: #abc8f7;
+  background: rgb(171, 200, 247);
   border-radius: 20px;
   padding: 25px 25px 10px 25px;
-  display: none;
-  position: fixed;
-  top: 20%;
-  left: 34%;
 }
-
 .addTodoCard .addTodoCard-form {
   width: 350px;
   margin: 0 auto;
 }
-
 .addTodoCard .addTodoCard-form .addTodoCard-form__description {
+  resize: none;
   outline: none;
   border-radius: 10px;
   text-align: center;
   margin: 10px 0px 20px 0px;
-  padding: 50px;
   width: 100%;
 }
-
 .addTodoCard .addTodoCard-form .addTodoCard-form__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .wrapper {
@@ -107,60 +86,43 @@ body {
   margin: 0 auto;
   border: 2px solid black;
   border-radius: 20px;
-  background: #eae6e6;
+  background: rgb(234, 230, 230);
 }
-
 .wrapper .wrapper__header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background: #c4b0d7;
-  border: 2px solid #c6a2ed;
+  justify-content: space-between;
+  background: rgb(196, 176, 215);
+  border: 2px solid rgb(198, 162, 237);
   border-radius: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 50px;
   margin-bottom: 20px;
 }
-
 .wrapper .wrapper__header .header__logo {
   font-size: 26px;
   font-weight: bold;
 }
-
 .wrapper .wrapper__header .header__clock {
-  background: #eae6e6;
+  background: rgb(234, 230, 230);
   border: 1px solid black;
   border-radius: 5px;
   padding: 20px;
 }
-
 .wrapper .wrapper-container {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .wrapper .wrapper-container .wrapper-container__block {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 31%;
-          flex: 1 1 31%;
+  flex: 1 1 31%;
   padding: 0px 40px;
 }
-
 .wrapper .wrapper-container .wrapper-container__block .todoBlock__header {
-  background: #b7ebb7;
-  border: 2px solid #7ecf7e;
+  background: rgb(183, 235, 183);
+  border: 2px solid rgb(126, 207, 126);
 }
-
 .wrapper .wrapper-container .wrapper-container__block .todoBlock__button {
-  background: #b7ebb7;
-  border: 2px solid #7ecf7e;
+  background: rgb(183, 235, 183);
+  border: 2px solid rgb(126, 207, 126);
   border-radius: 10px;
   width: 100%;
   padding: 10px 0px;
@@ -168,24 +130,17 @@ body {
   font-size: 15px;
   font-weight: bold;
 }
-
 .wrapper .wrapper-container .wrapper-container__block .inprogressBlock__header {
-  background: #eae6e6;
+  background: rgb(234, 230, 230);
   border: 2px solid black;
 }
-
-.wrapper .wrapper-container .wrapper-container__block .todoBlock__container {
-  min-height: 350px;
-}
-
 .wrapper .wrapper-container .wrapper-container__block .doneBlock__header {
-  background: #abc8f7;
-  border: 2px solid #6e9ce6;
+  background: rgb(171, 200, 247);
+  border: 2px solid rgb(110, 156, 230);
 }
-
 .wrapper .wrapper-container .wrapper-container__block .doneBlock__button {
-  background: #abc8f7;
-  border: 2px solid #6e9ce6;
+  background: rgb(171, 200, 247);
+  border: 2px solid rgb(110, 156, 230);
   border-radius: 10px;
   width: 100%;
   padding: 10px 0px;
@@ -193,44 +148,27 @@ body {
   font-size: 15px;
   font-weight: bold;
 }
-
 .wrapper .wrapper-container .card {
-  background: #b7ebb7;
+  background: rgb(183, 235, 183);
   margin: 0px 10px 20px 10px;
   border-radius: 10px;
   border: 2px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 10px;
 }
-
-.wrapper .wrapper-container .card .card__container-buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
 .wrapper .wrapper-container .card .left {
   margin: 20px 0px;
   padding: 3px;
 }
-
 .wrapper .wrapper-container .card .right {
   margin: 20px 0px;
 }
-
 .wrapper .wrapper-container .card .card__container-transitionButton {
   text-align: end;
 }
-
 .wrapper .wrapper-container .card .card__container-time {
   text-align: end;
 }
-/*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=/style.e0c02e61.css.map */

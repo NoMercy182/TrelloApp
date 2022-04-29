@@ -1,14 +1,103 @@
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
-h2 {
-  font-size: 20px;
+select {
+  outline: none;
+  border-radius: 5px;
+}
+
+input {
+  outline: none;
+  border-radius: 5px;
+  text-align: center;
+  width: 50%;
+}
+
+.header {
+  border-radius: 10px;
+  padding: 10px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.name {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.counter {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.container {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-radius: 5px;
+  padding-top: 20px;
+  min-height: 350px;
+}
+
+.cardButton {
+  padding: 3px 15px;
+  border-radius: 5px;
+  margin: 0px 5px;
+  cursor: pointer;
+}
+
+.functionButton {
+  padding: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+body {
+  position: relative;
+}
+
+.addTodoCard {
+  width: 400px;
+  background: #abc8f7;
+  border-radius: 20px;
+  padding: 25px 25px 10px 25px;
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 34%;
+}
+
+.addTodoCard .addTodoCard-form {
+  width: 350px;
+  margin: 0 auto;
+}
+
+.addTodoCard .addTodoCard-form .addTodoCard-form__description {
+  outline: none;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px 0px 20px 0px;
+  padding: 50px;
+  width: 100%;
+}
+
+.addTodoCard .addTodoCard-form .addTodoCard-form__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .wrapper {
@@ -16,96 +105,133 @@ h2 {
   width: 100%;
   padding: 50px 16px;
   margin: 0 auto;
-  background: #eae6e6;
-  height: 2000px;
   border: 2px solid black;
   border-radius: 20px;
+  background: #eae6e6;
 }
 
-.header {
-  max-width: 1000px;
-  width: 100%;
-  margin: 0px auto 30px;
-  padding: 0px 50px;
-  background: #c4b0d7;
-  height: 140px;
-  border: 2px solid #c6a2ed;
-  border-radius: 20px;
+.wrapper .wrapper__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 25px;
+  background: #c4b0d7;
+  border: 2px solid #c6a2ed;
+  border-radius: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px;
+  margin-bottom: 20px;
 }
 
-.header__clock {
-  width: 100px;
-  height: 60px;
+.wrapper .wrapper__header .header__logo {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.wrapper .wrapper__header .header__clock {
   background: #eae6e6;
   border: 1px solid black;
   border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 20px;
+  padding: 20px;
 }
 
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 50px;
-  max-width: 1000px;
+.wrapper .wrapper-container {
   width: 100%;
-  margin: 0 auto;
-}
-
-.block {
-  width: calc(100%/3);
-}
-
-.block__head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 30px 15px;
-  border-radius: 5px;
 }
 
-.block__head__counter {
-  font-size: 20px;
+.wrapper .wrapper-container .wrapper-container__block {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 31%;
+          flex: 1 1 31%;
+  padding: 0px 40px;
 }
 
-.addBlock .block__head {
+.wrapper .wrapper-container .wrapper-container__block .todoBlock__header {
   background: #b7ebb7;
   border: 2px solid #7ecf7e;
 }
 
-.workBlock .block__head {
+.wrapper .wrapper-container .wrapper-container__block .todoBlock__button {
+  background: #b7ebb7;
+  border: 2px solid #7ecf7e;
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px 0px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.wrapper .wrapper-container .wrapper-container__block .inprogressBlock__header {
   background: #eae6e6;
   border: 2px solid black;
 }
 
-.doneBlock .block__head {
+.wrapper .wrapper-container .wrapper-container__block .todoBlock__container {
+  min-height: 350px;
+}
+
+.wrapper .wrapper-container .wrapper-container__block .doneBlock__header {
   background: #abc8f7;
   border: 2px solid #6e9ce6;
+}
+
+.wrapper .wrapper-container .wrapper-container__block .doneBlock__button {
+  background: #abc8f7;
+  border: 2px solid #6e9ce6;
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px 0px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.wrapper .wrapper-container .card {
+  background: #b7ebb7;
+  margin: 0px 10px 20px 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+.wrapper .wrapper-container .card .card__container-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.wrapper .wrapper-container .card .left {
+  margin: 20px 0px;
+  padding: 3px;
+}
+
+.wrapper .wrapper-container .card .right {
+  margin: 20px 0px;
+}
+
+.wrapper .wrapper-container .card .card__container-transitionButton {
+  text-align: end;
+}
+
+.wrapper .wrapper-container .card .card__container-time {
+  text-align: end;
 }
 
 
